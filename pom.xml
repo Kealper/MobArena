@@ -5,32 +5,32 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.garbagemule</groupId>
-  <artifactId>mobarena</artifactId>
+  <artifactId>MobArena</artifactId>
   <name>MobArena</name>
-  <version>0.97.2-SNAPSHOT</version>
+  <version>0.97.2</version>
 
   <build>
     <plugins>
-      <!-- Use Java 7 for compilation -->
+      <!-- Use Java 8 for compilation -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
 
       <!-- Rename the final jar-file to MobArena.jar -->
-      <plugin>
+      <!--<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
         <version>2.5</version>
         <configuration>
           <finalName>MobArena</finalName>
         </configuration>
-      </plugin>
+      </plugin>-->
     </plugins>
 
     <resources>
@@ -46,13 +46,13 @@
     <!-- Spigot repo -->
     <repository>
       <id>spigot-repo</id>
-      <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
+      <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
     </repository>
 
     <!-- Vault repo -->
     <repository>
       <id>vault-repo</id>
-      <url>http://nexus.theyeticave.net/content/repositories/pub_releases/</url>
+      <url>http://nexus.hc.to/content/repositories/pub_releases</url>
     </repository>
   </repositories>
 
@@ -61,7 +61,7 @@
     <dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
-      <version>1.8.7-R0.1-SNAPSHOT</version>
+      <version>1.10.2-R0.1-SNAPSHOT</version>
     </dependency>
 
     <!-- Vault -->
@@ -72,7 +72,7 @@
     </dependency>
 
     <!-- Magic Spells (tentative) -->
-    <dependency>
+	<dependency>
       <groupId>com.nisovin</groupId>
       <artifactId>magicspells</artifactId>
       <version>1.0</version>
